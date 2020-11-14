@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner html</title>
+</head>
+
+<body>
+    <h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output"></div>
+    <select id="barang" onclick="coba()">
+        <!-- <option value="0">Silahkan Pilih</option>
+        <option  id="hasil-output">Kulkas</option>
+        <option value="200">tv</option>
+        <option value="300">jam</option> -->
+    </select>
+
+    <input type="text" id="harga">
+    <script type="text/javascript">
+        function price() {
+            var tes = document.getElementById("barang").value;
+            document.getElementById("harga").value = tes;
+        }
+    </script>
+
+    <script>
+        // membuat objek elemen
+        function coba() {
+
+
+            var hasil = document.getElementById("hasil-output");
+
+            // menampilkan output ke elemen hasil
+            hasil.innerHTML = `<form action="index.html" method=post>
+                            <label for="input">okay</label>
+                            <input type="text" placeholder="okay">
+                            <button type="submit">simapan</button>
+                            </form>`;
+        }
+    </script>
+
+
+</body>
+
+</html>
